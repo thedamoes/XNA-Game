@@ -1,8 +1,8 @@
 [Craig]   -  S.A.F physics engine
           - collision detection???
         
-[Damien]  -  character reset if move offscreen
-            - change background/foreground??
+[Damien]  -  character reset if move offscreen [Done]
+            - change background/foreground [Done]
           - update character animation?
           - new states???
 

@@ -67,7 +67,12 @@ namespace WindowsGame1
         {
 
             KeyboardState aCurrentKeyboardState = Keyboard.GetState();
-
+           // Below:  resets position of char if it reaches the width of the screen. 
+            if (Position.X >= 790)
+            {
+                Position.X = -5;
+                screen = 1;
+            }
             UpdateMovement(aCurrentKeyboardState);
             UpdateJump(aCurrentKeyboardState);
             UpdateOhgodwhy(aCurrentKeyboardState);
@@ -215,6 +220,7 @@ namespace WindowsGame1
             if (mCurrentState == State.Walking)
             {
 
+
                 mSpeed = Vector2.Zero;
 
                 mDirection = Vector2.Zero;
@@ -236,7 +242,7 @@ namespace WindowsGame1
                     mSpeed.X = BEE_SPEED;
 
                     mDirection.X = MOVE_RIGHT;
-
+                 
                 }
 
 

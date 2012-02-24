@@ -17,7 +17,7 @@ namespace WindowsGame1
 
         public Vector2 Position = new Vector2(0, 0);
 
-
+        public int screen = 0;
         //The texture object used when drawing the sprite
 
         public string AssetName;

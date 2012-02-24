@@ -91,6 +91,15 @@
       <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\WizardSquare.xnb</Output>
       <Time>2008-03-13T21:20:10+00:00</Time>
     </Item>
+    <Item>
+      <Source>comeatmebro.png</Source>
+      <Name>comeatmebro</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\comeatmebro.xnb</Output>
+      <Time>2012-02-24T21:24:18.0878997+00:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
