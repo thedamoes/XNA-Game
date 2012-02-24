@@ -43,6 +43,16 @@ namespace WindowsGame1
         /// </summary>
         protected override void Initialize()
         {
+
+
+            //Change the resolution to 800x600
+
+            graphics.PreferredBackBufferWidth = 800;
+
+            graphics.PreferredBackBufferHeight = 600;
+
+            graphics.ApplyChanges();
+
             // TODO: Add your initialization logic here
             mBeeSprite = new Bee();
           //  bee2 = new Sprite();

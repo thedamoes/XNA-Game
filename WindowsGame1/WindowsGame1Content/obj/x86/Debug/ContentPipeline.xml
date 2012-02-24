@@ -73,6 +73,24 @@
       <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Fireball.xnb</Output>
       <Time>2012-02-22T12:51:23.5040059+00:00</Time>
     </Item>
+    <Item>
+      <Source>ohgodwhy.png</Source>
+      <Name>ohgodwhy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ohgodwhy.xnb</Output>
+      <Time>2012-02-24T16:03:50.7454781+00:00</Time>
+    </Item>
+    <Item>
+      <Source>WizardSquare.png</Source>
+      <Name>WizardSquare</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\WizardSquare.xnb</Output>
+      <Time>2008-03-13T21:20:10+00:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

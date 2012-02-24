@@ -34,10 +34,35 @@ namespace WindowsGame1
         //Load the texture for the sprite using the Content Pipeline
 
 
+
+        //The Rectangular area from the original image that 
+
+        //defines the Sprite. 
+
+        Rectangle mSource;
+
+        public Rectangle Source
+        {
+
+            get { return mSource; }
+
+            set
+            {
+
+                mSource = value;
+
+                Size = new Rectangle(0, 0, (int)(mSource.Width * Scale), (int)(mSource.Height * Scale));
+
+            }
+
+        }
+
+
+
+
         //When the scale is modified throught he property, the Size of the 
 
         //sprite is recalculated with the new scale applied.
-
         public float Scale
         {
             get { return mScale; }
@@ -47,7 +72,7 @@ namespace WindowsGame1
 
                 //Recalculate the Size of the Sprite with the new scale
 
-               // Size = new Rectangle(0, 0, (int)(mSpriteTexture.Width * Scale), (int)(mSpriteTexture.Height * Scale));
+                Size = new Rectangle(0, 0, (int)(Source.Width * Scale), (int)(Source.Height * Scale));
             }
         }
 
@@ -68,15 +93,15 @@ namespace WindowsGame1
 
             mSpriteTexture = theContentManager.Load<Texture2D>(theAssetName);
             AssetName = theAssetName;
+            Source = new Rectangle(0, 0, mSpriteTexture.Width, mSpriteTexture.Height);
             Size = new Rectangle(0, 0, (int)(mSpriteTexture.Width * Scale), (int)(mSpriteTexture.Height * Scale));
         }
 
-        public void Draw(SpriteBatch theSpriteBatch)
+        public virtual void Draw(SpriteBatch theSpriteBatch)
         {
 
-            theSpriteBatch.Draw(mSpriteTexture, Position,
-            new Rectangle(0, 0, mSpriteTexture.Width, mSpriteTexture.Height), Color.White,
-            0.0f, Vector2.Zero, Scale, SpriteEffects.None, 0);
+            theSpriteBatch.Draw(mSpriteTexture, Position, Source,
+                Color.White, 0.0f, Vector2.Zero, Scale, SpriteEffects.None, 0);
 
         }
 
