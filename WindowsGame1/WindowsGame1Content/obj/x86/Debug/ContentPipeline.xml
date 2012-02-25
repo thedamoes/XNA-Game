@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Background01.xnb</Output>
-      <Time>2012-02-22T12:50:05.232529+00:00</Time>
+      <Output>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Background01.xnb</Output>
+      <Time>2012-02-23T21:02:22.1968+00:00</Time>
     </Item>
     <Item>
       <Source>Background02.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Background02.xnb</Output>
-      <Time>2012-02-22T12:50:10.3278205+00:00</Time>
+      <Output>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Background02.xnb</Output>
+      <Time>2012-02-23T21:02:22.1968+00:00</Time>
     </Item>
     <Item>
       <Source>Background03.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Background03.xnb</Output>
-      <Time>2012-02-22T12:50:14.4360554+00:00</Time>
+      <Output>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Background03.xnb</Output>
+      <Time>2012-02-23T21:02:22.1978+00:00</Time>
     </Item>
     <Item>
       <Source>Background04.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Background04.xnb</Output>
-      <Time>2012-02-22T12:50:20.0013738+00:00</Time>
+      <Output>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Background04.xnb</Output>
+      <Time>2012-02-23T21:02:22.1988+00:00</Time>
     </Item>
     <Item>
       <Source>Background05.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Background05.xnb</Output>
-      <Time>2012-02-22T12:50:24.445628+00:00</Time>
+      <Output>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Background05.xnb</Output>
+      <Time>2012-02-23T21:02:22.2098+00:00</Time>
     </Item>
     <Item>
       <Source>BackgroundCloud01.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BackgroundCloud01.xnb</Output>
-      <Time>2012-02-22T12:50:28.834879+00:00</Time>
+      <Output>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BackgroundCloud01.xnb</Output>
+      <Time>2012-02-23T21:02:22.2108+00:00</Time>
     </Item>
     <Item>
       <Source>Bee.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Bee.xnb</Output>
-      <Time>2012-02-22T12:49:25.9182804+00:00</Time>
+      <Output>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Bee.xnb</Output>
+      <Time>2012-02-23T21:02:22.2118+00:00</Time>
     </Item>
     <Item>
       <Source>Fireball.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Fireball.xnb</Output>
-      <Time>2012-02-22T12:51:23.5040059+00:00</Time>
+      <Output>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Fireball.xnb</Output>
+      <Time>2012-02-23T21:02:22.2128+00:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -79,10 +79,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1Content\</RootDirectory>
+      <LoggerRootDirectory>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -111,7 +111,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-02-21T15:56:03.0770411+00:00</Value>
+        <Value>2012-01-30T19:15:43.436+00:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
