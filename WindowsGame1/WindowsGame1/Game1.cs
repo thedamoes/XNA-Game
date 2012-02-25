@@ -16,6 +16,7 @@ namespace WindowsGame1
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        private Engine.Pyhsics m_physicsEngine = new Engine.Pyhsics(); 
 
         Sprite mBackgroundOne;
         Sprite mBackgroundTwo;
@@ -231,7 +232,7 @@ namespace WindowsGame1
             mBackgroundFive.Position += aDirection * aSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;            
 
 
-            // TODO: Add your update logic here
+            
 
             base.Update(gameTime);
         }

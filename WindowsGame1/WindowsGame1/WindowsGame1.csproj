@@ -108,10 +108,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bee.cs" />
+    <Compile Include="Engine\CollisionDetection.cs" />
     <Compile Include="Fireball.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="Engine\Pyhsics.cs" />
     <Compile Include="Sprite.cs" />
   </ItemGroup>
   <ItemGroup>

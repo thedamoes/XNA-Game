@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace WindowsGame1
 {
-    class Sprite
+    public class Sprite
     {
         //The current position of the Sprite
 
@@ -24,11 +24,26 @@ namespace WindowsGame1
 
 
         private Texture2D mSpriteTexture;
-
+        
 
         public Rectangle Size;
 
         private float mScale = 0.5f;
+
+        public Vector2 CenterPoint
+        {
+             get { return Position; }
+        }
+        public float height
+        {
+            get { return Size.Height; }
+        }
+        public float width
+        {
+            get { return Size.Width; }
+        }
+
+       
         
 
         //Load the texture for the sprite using the Content Pipeline
@@ -104,6 +119,13 @@ namespace WindowsGame1
                 Color.White, 0.0f, Vector2.Zero, Scale, SpriteEffects.None, 0);
 
         }
+
+        #region collision_Detection_Virtuals
+        public virtual void collidedFloor()
+        {
+
+        }
+        #endregion
 
 
 
