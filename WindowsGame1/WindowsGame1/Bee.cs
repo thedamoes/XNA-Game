@@ -92,7 +92,7 @@ namespace WindowsGame1
             if (aCurrentKeyboardState.IsKeyDown(Keys.F) == true)
             {
 
-                Flight();
+                Flight(aCurrentKeyboardState);
 
             }
 
@@ -106,7 +106,7 @@ namespace WindowsGame1
 
 
 
-        private void Flight()
+        private void Flight(KeyboardState aCurrentKeyboardState)
         {
 
             if (mCurrentState == State.Walking)
@@ -116,74 +116,14 @@ namespace WindowsGame1
                 mDirection = Vector2.Zero;
 
                 mCurrentState = State.Flying;
+                //set counter to 30? 
                
             }
 
             if(mCurrentState == State.Flying)
             {
 
-                 if(gifpos <= 3)
-                {
-                    if (gifpos <= 1)
-                    {
-                        Source = new Rectangle(0, 200, 200, 200);
-                        if(back)
-                        {
-                            if(gifpos > 0)
-                            {
-                                gifpos--;
-                            }
-                            else
-                            {
-                                gifpos++;
-                                back = false; 
-                            }
-                            
-                        }
-                        else
-                        {
-                            gifpos++;
-                            back = false; 
-                        }
-                       
-                    }
-                    if (gifpos <= 2 && gifpos >= 2)
-                    {
-                        Source = new Rectangle(200, 200, 200, 200);
-                        if (back)
-                        {
-                            gifpos--;
-                        }
-                        else
-                        {
-                            gifpos++;
-                        }
-                    }
-                    if (gifpos <= 3 && gifpos >= 3)
-                    {
-                        Source = new Rectangle(400, 200, 200, 200);
-
-                        if (!back)
-                        {
-                            if (gifpos < 3)
-                            {
-                                gifpos++;
-                            }
-                            else
-                            {
-                                gifpos--;
-                                back = true;
-                            }
-
-                        }
-                        else
-                        {
-                            gifpos--;
-                        }
-
-                    }
-
-                }
+                FlightAnimation(aCurrentKeyboardState);
 
             }
 
@@ -200,6 +140,76 @@ namespace WindowsGame1
 
             }
         }
+
+
+
+        private void FlightAnimation(KeyboardState aCurrentKeyboardState)
+        {
+            if (gifpos <= 3)
+            {
+                if (gifpos <= 1)
+                {
+                    Source = new Rectangle(0, 200, 200, 200);
+                    if (back)
+                    {
+                        if (gifpos > 0)
+                        {
+                            gifpos--;
+                        }
+                        else
+                        {
+                            gifpos++;
+                            back = false;
+                        }
+
+                    }
+                    else
+                    {
+                        gifpos++;
+                        back = false;
+                    }
+
+                }
+                if (gifpos <= 2 && gifpos >= 2)
+                {
+                    Source = new Rectangle(200, 200, 200, 200);
+                    if (back)
+                    {
+                        gifpos--;
+                    }
+                    else
+                    {
+                        gifpos++;
+                    }
+                }
+                if (gifpos <= 3 && gifpos >= 3)
+                {
+                    Source = new Rectangle(400, 200, 200, 200);
+
+                    if (!back)
+                    {
+                        if (gifpos < 3)
+                        {
+                            gifpos++;
+                        }
+                        else
+                        {
+                            gifpos--;
+                            back = true;
+                        }
+
+                    }
+                    else
+                    {
+                        gifpos--;
+                    }
+
+                }
+
+            }
+        }
+
+
 
 
 
