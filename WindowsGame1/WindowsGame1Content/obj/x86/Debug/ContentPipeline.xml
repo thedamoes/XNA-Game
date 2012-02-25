@@ -73,6 +73,33 @@
       <Output>D:\programming\XNAGame\XNA-Game\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Fireball.xnb</Output>
       <Time>2012-02-23T21:02:22.2128+00:00</Time>
     </Item>
+    <Item>
+      <Source>ohgodwhy.png</Source>
+      <Name>ohgodwhy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ohgodwhy.xnb</Output>
+      <Time>2012-02-25T14:17:55.1022+00:00</Time>
+    </Item>
+    <Item>
+      <Source>WizardSquare.png</Source>
+      <Name>WizardSquare</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\WizardSquare.xnb</Output>
+      <Time>2012-02-25T14:17:55.0992+00:00</Time>
+    </Item>
+    <Item>
+      <Source>comeatmebro.png</Source>
+      <Name>comeatmebro</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Damo\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\comeatmebro.xnb</Output>
+      <Time>2012-02-25T14:17:55.1002+00:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

@@ -29,6 +29,15 @@ namespace WindowsGame1
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        String Back1 = "Background01";
+        String Back2 = "Background02";
+        String Back3 = "Background03";
+        String Back4 = "Background04";
+        String Back5 = "Background05";
+        
+
+
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -43,6 +52,16 @@ namespace WindowsGame1
         /// </summary>
         protected override void Initialize()
         {
+
+
+            //Change the resolution to 800x600
+
+            graphics.PreferredBackBufferWidth = 800;
+
+            graphics.PreferredBackBufferHeight = 600;
+
+            graphics.ApplyChanges();
+
             // TODO: Add your initialization logic here
             mBeeSprite = new Bee();
           //  bee2 = new Sprite();
@@ -93,23 +112,24 @@ namespace WindowsGame1
 
            // bee2.Position = new Vector2(50,50);
 
-            mBackgroundOne.LoadContent(this.Content, "Background01");
+
+            mBackgroundOne.LoadContent(this.Content, Back1);
 
             mBackgroundOne.Position = new Vector2(0, 0);
 
-            mBackgroundTwo.LoadContent(this.Content, "Background02");
+            mBackgroundTwo.LoadContent(this.Content, Back2);
 
             mBackgroundTwo.Position = new Vector2(mBackgroundOne.Position.X + mBackgroundOne.Size.Width, 0);
 
-            mBackgroundThree.LoadContent(this.Content, "Background03");
+            mBackgroundThree.LoadContent(this.Content, Back3);
 
             mBackgroundThree.Position = new Vector2(mBackgroundTwo.Position.X + mBackgroundTwo.Size.Width, 0);
 
-            mBackgroundFour.LoadContent(this.Content, "Background04");
+            mBackgroundFour.LoadContent(this.Content, Back4);
 
             mBackgroundFour.Position = new Vector2(mBackgroundThree.Position.X + mBackgroundThree.Size.Width, 0);
 
-            mBackgroundFive.LoadContent(this.Content, "Background05");
+            mBackgroundFive.LoadContent(this.Content, Back5);
 
             mBackgroundFive.Position = new Vector2(mBackgroundFour.Position.X + mBackgroundFour.Size.Width, 0);
 
@@ -143,6 +163,19 @@ namespace WindowsGame1
                 this.Exit();
 
             mBeeSprite.Update(gameTime);
+
+            if (mBeeSprite.screen == 1)
+            {
+                Back1 = "comeatmebro";
+                Back2 = "comeatmebro";
+                Back3 = "comeatmebro";
+                Back4 = "comeatmebro";
+                Back5 = "comeatmebro";
+                LoadContent();
+                mBeeSprite.screen = 0;
+                
+            }
+
 
             if (mBackgroundOne.Position.X < -mBackgroundOne.Size.Width)
             {
