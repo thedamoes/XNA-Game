@@ -25,6 +25,7 @@ namespace WindowsGame1
         Sprite mBackgroundFive;
 
         Bee mBeeSprite;
+
       //  Sprite bee2;
 
         GraphicsDeviceManager graphics;
@@ -64,6 +65,8 @@ namespace WindowsGame1
             graphics.ApplyChanges();
 
             // TODO: Add your initialization logic here
+
+
             mBeeSprite = new Bee();
           //  bee2 = new Sprite();
 
@@ -107,7 +110,6 @@ namespace WindowsGame1
 
             mBeeSprite.LoadContent(this.Content);
 
-            //mBeeSprite.Position = new Vector2(125, 125);
 
            // bee2.LoadContent(this.Content, "BEE");
 
@@ -262,6 +264,7 @@ namespace WindowsGame1
             mBackgroundFive.Draw(this.spriteBatch);
 
             mBeeSprite.Draw(this.spriteBatch);
+
             //bee2.Draw(this.spriteBatch);
 
             spriteBatch.End();
