@@ -120,6 +120,7 @@ namespace WindowsGame1
 
         }
 
+
         #region collision_Detection_Virtuals
         public virtual void collidedFloor()
         {
