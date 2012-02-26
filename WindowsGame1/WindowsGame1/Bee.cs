@@ -149,7 +149,18 @@ namespace WindowsGame1
             {
                 if (gifpos <= 1)
                 {
-                    Source = new Rectangle(0, 200, 200, 200);
+                    if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true)
+                    {
+                        Source = new Rectangle(0, 600, 200, 200);
+                    }
+                    else if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
+                    { 
+                        Source = new Rectangle(0, 400, 200, 200);
+                    }
+                    else
+                    {
+                        Source = new Rectangle(0, 200, 200, 200);
+                    }
                     if (back)
                     {
                         if (gifpos > 0)
@@ -172,7 +183,18 @@ namespace WindowsGame1
                 }
                 if (gifpos <= 2 && gifpos >= 2)
                 {
-                    Source = new Rectangle(200, 200, 200, 200);
+                    if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true)
+                    {
+                        Source = new Rectangle(200, 600, 200, 200);
+                    }
+                    else if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
+                    {
+                        Source = new Rectangle(200, 400, 200, 200);
+                    }
+                    else
+                    {
+                        Source = new Rectangle(200, 200, 200, 200);
+                    }
                     if (back)
                     {
                         gifpos--;
@@ -184,8 +206,18 @@ namespace WindowsGame1
                 }
                 if (gifpos <= 3 && gifpos >= 3)
                 {
-                    Source = new Rectangle(400, 200, 200, 200);
-
+                    if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true)
+                    {
+                        Source = new Rectangle(400, 600, 200, 200);
+                    }
+                    else if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
+                    {
+                        Source = new Rectangle(400, 400, 200, 200);
+                    }
+                    else
+                    {
+                        Source = new Rectangle(400, 200, 200, 200);
+                    }
                     if (!back)
                     {
                         if (gifpos < 3)
