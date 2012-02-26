@@ -22,8 +22,9 @@ namespace WindowsGame1
         const int MOVE_LEFT = -1;
         const int MOVE_RIGHT = 1;
         int gifpos = 1;
-        bool back = false; 
-
+        bool back = false;
+        static int flightDuation = 300;
+        public int stamina = flightDuation;
 
         enum State
         {
@@ -45,7 +46,7 @@ namespace WindowsGame1
         ContentManager mContentManager;
 
 
-
+        
 
         public void LoadContent(ContentManager theContentManager)
         {
@@ -91,13 +92,29 @@ namespace WindowsGame1
 
             if (aCurrentKeyboardState.IsKeyDown(Keys.F) == true)
             {
+                if (stamina > 0)
+                {
+                    stamina--;
+                    Flight(aCurrentKeyboardState);
+                }
+                else
+                {
+                    if (stamina < flightDuation)
+                    {
+                        stamina++;
+                    }
 
-                Flight(aCurrentKeyboardState);
+                    StopFlight();
+                }
 
             }
 
             else if (aCurrentKeyboardState.IsKeyDown(Keys.F) == false)
             {
+                if (stamina < flightDuation)
+                {
+                    stamina++;
+                }
                 StopFlight();
             }
 
@@ -116,14 +133,58 @@ namespace WindowsGame1
                 mDirection = Vector2.Zero;
 
                 mCurrentState = State.Flying;
-                //set counter to 30? 
+                 
                
             }
 
             if(mCurrentState == State.Flying)
             {
 
+
+                mSpeed = Vector2.Zero;
+
+                mDirection = Vector2.Zero;
+
+
                 FlightAnimation(aCurrentKeyboardState);
+
+                if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
+                {
+
+                    mSpeed.X = BEE_SPEED;
+
+                    mDirection.X = MOVE_LEFT;
+
+                }
+
+                else if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true)
+                {
+
+                    mSpeed.X = BEE_SPEED;
+
+                    mDirection.X = MOVE_RIGHT;
+
+                }
+
+
+
+                 if (aCurrentKeyboardState.IsKeyDown(Keys.Up) == true)
+                 {
+
+                     mSpeed.Y = BEE_SPEED;
+
+                     mDirection.Y = MOVE_UP;
+
+                 }
+
+                 else if (aCurrentKeyboardState.IsKeyDown(Keys.Down) == true)
+                 {
+
+                     mSpeed.Y = BEE_SPEED;
+
+                     mDirection.Y = MOVE_DOWN;
+
+                 }
 
             }
 
@@ -134,11 +195,35 @@ namespace WindowsGame1
             if (mCurrentState == State.Flying)
             {
 
+                if (Position.Y > 450)
+                {
+
+                    Position.Y = 450;
+
+                    mCurrentState = State.Walking;
+
+                    mDirection = Vector2.Zero;
+
+                }
+
+
                 Source = new Rectangle(200, 0, 200, 200);
 
                 mCurrentState = State.Walking;
 
             }
+
+            if (mCurrentState == State.Walking)
+            {
+                if (Position.Y < 450)
+                {
+                    mSpeed.Y = BEE_SPEED;
+
+                    mDirection.Y = MOVE_DOWN;
+
+                }
+            }
+
         }
 
 
@@ -407,25 +492,6 @@ namespace WindowsGame1
                 }
 
 
-
-               /* if (aCurrentKeyboardState.IsKeyDown(Keys.Up) == true)
-                {
-
-                    mSpeed.Y = BEE_SPEED;
-
-                    mDirection.Y = MOVE_UP;
-
-                }
-
-                else if (aCurrentKeyboardState.IsKeyDown(Keys.Down) == true)
-                {
-
-                    mSpeed.Y = BEE_SPEED;
-
-                    mDirection.Y = MOVE_DOWN;
-
-                }*/
-
             }
 
         }
@@ -509,6 +575,8 @@ namespace WindowsGame1
                 aFireball.Draw(theSpriteBatch);
 
             }
+
+
 
             base.Draw(theSpriteBatch);
 
