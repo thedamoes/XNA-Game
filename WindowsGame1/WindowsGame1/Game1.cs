@@ -26,6 +26,7 @@ namespace WindowsGame1
 
         Bee mBeeSprite;
 
+        StaminaBar mStamina;
       //  Sprite bee2;
 
         GraphicsDeviceManager graphics;
@@ -54,7 +55,7 @@ namespace WindowsGame1
         /// </summary>
         protected override void Initialize()
         {
-
+            this.IsMouseVisible = true;
 
             //Change the resolution to 800x600
 
@@ -69,6 +70,8 @@ namespace WindowsGame1
 
             mBeeSprite = new Bee();
           //  bee2 = new Sprite();
+            mStamina = new StaminaBar();
+
 
 
             mBackgroundOne = new Sprite();
@@ -110,6 +113,7 @@ namespace WindowsGame1
 
             mBeeSprite.LoadContent(this.Content);
 
+            mStamina.LoadContent(this.Content);
 
            // bee2.LoadContent(this.Content, "BEE");
 
@@ -166,6 +170,8 @@ namespace WindowsGame1
                 this.Exit();
 
             mBeeSprite.Update(gameTime);
+
+            mStamina.stamina = mBeeSprite.stamina;
 
             if (mBeeSprite.screen == 1)
             {
@@ -264,6 +270,8 @@ namespace WindowsGame1
             mBackgroundFive.Draw(this.spriteBatch);
 
             mBeeSprite.Draw(this.spriteBatch);
+
+            mStamina.Draw(this.spriteBatch);
 
             //bee2.Draw(this.spriteBatch);
 
