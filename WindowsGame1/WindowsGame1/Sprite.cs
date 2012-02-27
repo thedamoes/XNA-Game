@@ -23,7 +23,7 @@ namespace WindowsGame1
         public string AssetName;
 
 
-        private Texture2D mSpriteTexture;
+        protected Texture2D mSpriteTexture;
         
 
         public Rectangle Size;
@@ -32,7 +32,11 @@ namespace WindowsGame1
 
         public Vector2 CenterPoint
         {
-             get { return Position; }
+            get { Vector2 centP = new Vector2();
+            centP.X = Position.X + (width / 2);
+            centP.Y = Position.Y - (height / 2);
+            return centP;
+            }
         }
         public float height
         {
