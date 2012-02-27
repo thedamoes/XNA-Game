@@ -26,6 +26,11 @@ namespace WindowsGame1
         static int flightDuation = 300;
         public int stamina = flightDuation;
 
+        public int getStamina
+        {
+            get { return stamina; }
+        }
+
         enum State
         {
             Walking,
@@ -73,7 +78,7 @@ namespace WindowsGame1
            // Below:  resets position of char if it reaches the width of the screen. 
             if (Position.X >= 790)
             {
-                Position.X = -5;
+                Position.X = 0;
                 screen = 1;
             }
             UpdateMovement(aCurrentKeyboardState);
