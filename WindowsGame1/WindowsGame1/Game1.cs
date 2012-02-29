@@ -262,9 +262,6 @@ namespace WindowsGame1
 
             spriteBatch.Begin();
 
-            this.mTerainManager.Draw(this.spriteBatch);
-
-            test.Draw(this.spriteBatch);
 
             mBackgroundOne.Draw(this.spriteBatch);
 
@@ -275,6 +272,10 @@ namespace WindowsGame1
             mBackgroundFour.Draw(this.spriteBatch);
 
             mBackgroundFive.Draw(this.spriteBatch);
+
+            this.mTerainManager.Draw(this.spriteBatch);
+
+           // test.Draw(this.spriteBatch);
 
             mBeeSprite.Draw(this.spriteBatch);
 
