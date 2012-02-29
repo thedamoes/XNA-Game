@@ -19,8 +19,6 @@ namespace WindowsGame1
         private Engine.Pyhsics m_physicsEngine = new Engine.Pyhsics();
         private TerainManager mTerainManager = new TerainManager();
 
-        platForm test = new platForm(100, 100, 1);
-
         Sprite mBackgroundOne;
         Sprite mBackgroundTwo;
         Sprite mBackgroundThree;
@@ -111,17 +109,18 @@ namespace WindowsGame1
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             mTerainManager.loadTerainContents(this.Content);
-
+            mTerainManager.registerSprites(this.m_physicsEngine);
             // TODO: use this.Content to load your game content here
 
             mBeeSprite.LoadContent(this.Content);
+
+            this.m_physicsEngine.registerMoveableSolid(mBeeSprite);
 
             mStamina.LoadContent(this.Content);
 
            // bee2.LoadContent(this.Content, "BEE");
 
            // bee2.Position = new Vector2(50,50);
-            test.LoadContent(this.Content);
 
             mBackgroundOne.LoadContent(this.Content, Back1);
 
@@ -144,7 +143,7 @@ namespace WindowsGame1
             mBackgroundFive.Position = new Vector2(mBackgroundFour.Position.X + mBackgroundFour.Size.Width, 0);
 
 
-
+            
 
 
 
@@ -240,11 +239,11 @@ namespace WindowsGame1
 
             mBackgroundFour.Position += aDirection * aSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            mBackgroundFive.Position += aDirection * aSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;            
+            mBackgroundFive.Position += aDirection * aSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
 
-            
 
+            this.m_physicsEngine.notifyCollisions();
             base.Update(gameTime);
         }
 

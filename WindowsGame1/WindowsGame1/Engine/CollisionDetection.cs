@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework;
 
 namespace WindowsGame1.Engine
 {
-    class CollisionDetection
+    public class CollisionDetection
     {
         private List<Sprite> m_fixedObjects;
         private List<Sprite> m_moveingObjects;
@@ -33,15 +33,35 @@ namespace WindowsGame1.Engine
             foreach (Sprite moveing in m_moveingObjects)
             {
                 Vector2 moveingPos = moveing.CenterPoint;
-                float moveingHeight = moveing.height;
-                float moveingWidth = moveing.width;
+                float moveingHeight = moveing.height/2;
+                float moveingWidth = moveing.width/2;
+                
                 foreach (Sprite fSprite in m_fixedObjects)
                 {
-                    if ((moveingPos.Y - moveingHeight) < (fSprite.CenterPoint.Y - fSprite.height))
-                        moveing.collidedFloor(); // change to appropriate collision type later
+                    float fizedHeight = fSprite.height / 2;
+                    float fixedWidth = fSprite.width / 2;
+
+                    if (
+                            ((moveingPos.Y + moveingHeight) > (fSprite.CenterPoint.Y - fizedHeight)) // check for y collisions
+                            && occupiesSameXSpace(moveingPos,moveingWidth,fSprite.CenterPoint,fixedWidth))   
+                             moveing.collidedFloor(moveingPos, fSprite.height);
 
                 }
             }
+        }
+
+        public Boolean occupiesSameXSpace(Vector2 center1, float width1, Vector2 center2, float width2)
+        {
+            float obj1LeftEdge = center1.X - width1;
+            float obj1RightEdge = center1.X + width1;
+
+            float obj2RightEdge = center2.X + width2;
+            float obj2LeftEdge = center2.X - width2;
+
+            if ((obj1RightEdge > obj2LeftEdge) && (obj1LeftEdge < obj2RightEdge))
+                return true;
+            
+            return false;
         }
     }
 }

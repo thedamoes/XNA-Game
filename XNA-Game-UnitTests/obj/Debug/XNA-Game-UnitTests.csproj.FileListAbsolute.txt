@@ -1,0 +1,7 @@
+D:\programming\XNAGame\XNA-Game\XNA-Game-UnitTests\bin\Debug\XNA-Game-UnitTests.dll
+D:\programming\XNAGame\XNA-Game\XNA-Game-UnitTests\bin\Debug\XNA-Game-UnitTests.pdb
+D:\programming\XNAGame\XNA-Game\XNA-Game-UnitTests\obj\Debug\ResolveAssemblyReference.cache
+D:\programming\XNAGame\XNA-Game\XNA-Game-UnitTests\obj\Debug\XNA-Game-UnitTests.dll
+D:\programming\XNAGame\XNA-Game\XNA-Game-UnitTests\obj\Debug\XNA-Game-UnitTests.pdb
+D:\programming\XNAGame\XNA-Game\XNA-Game-UnitTests\bin\Debug\WindowsGame1.exe
+D:\programming\XNAGame\XNA-Game\XNA-Game-UnitTests\bin\Debug\WindowsGame1.pdb

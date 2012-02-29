@@ -40,7 +40,7 @@ namespace WindowsGame1
         }
 
         State mCurrentState = State.Walking;
-        Vector2 mDirection = Vector2.Zero;
+        
         Vector2 mSpeed = Vector2.Zero;
         KeyboardState mPreviousKeyboardState;
         Vector2 mStartingPosition = Vector2.Zero;

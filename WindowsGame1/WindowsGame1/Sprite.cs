@@ -16,7 +16,7 @@ namespace WindowsGame1
         //The current position of the Sprite
 
         public Vector2 Position = new Vector2(0, 0);
-
+        protected Vector2 mDirection = Vector2.Zero;
         public int screen = 0;
         //The texture object used when drawing the sprite
 
@@ -126,9 +126,10 @@ namespace WindowsGame1
 
 
         #region collision_Detection_Virtuals
-        public virtual void collidedFloor()
+        public virtual void collidedFloor(Vector2 colcp, float colH)
         {
-
+            int i = 0;
+            i++;
         }
         #endregion
 

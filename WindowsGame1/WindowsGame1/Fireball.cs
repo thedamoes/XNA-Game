@@ -16,7 +16,6 @@ namespace WindowsGame1
 
         Vector2 mStartPosition;
         Vector2 mSpeed;
-        Vector2 mDirection;
 
         public void LoadContent(ContentManager theContentManager)
         {
