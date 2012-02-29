@@ -22,7 +22,7 @@ namespace WindowsGame1
 
         public void LoadContent(ContentManager theContentManager)
         {
-            Scale = 5f;
+            Scale = 1f;
             m_ContentManager = theContentManager;
             base.LoadContent(theContentManager, PLATFORM_ASSETNAME);
         }
