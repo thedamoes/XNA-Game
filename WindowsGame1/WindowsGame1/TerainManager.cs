@@ -14,7 +14,7 @@ namespace WindowsGame1
         {
             // initalise the map terains here
 
-            terrains.Add(new platForm(100, 100, 1));
+            terrains.Add(new platForm(0, 450, 1));
         }
 
         public override void Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch theSpriteBatch)
