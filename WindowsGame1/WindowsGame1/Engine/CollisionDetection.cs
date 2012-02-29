@@ -37,7 +37,8 @@ namespace WindowsGame1.Engine
                 float moveingWidth = moveing.width;
                 foreach (Sprite fSprite in m_fixedObjects)
                 {
-
+                    if ((moveingPos.Y - moveingHeight) < (fSprite.CenterPoint.Y - fSprite.height))
+                        moveing.collidedFloor(); // change to appropriate collision type later
 
                 }
             }

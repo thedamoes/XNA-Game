@@ -16,7 +16,10 @@ namespace WindowsGame1
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
-        private Engine.Pyhsics m_physicsEngine = new Engine.Pyhsics(); 
+        private Engine.Pyhsics m_physicsEngine = new Engine.Pyhsics();
+        private TerainManager mTerainManager = new TerainManager();
+
+        platForm test = new platForm(100, 100, 1);
 
         Sprite mBackgroundOne;
         Sprite mBackgroundTwo;
@@ -107,7 +110,7 @@ namespace WindowsGame1
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            mTerainManager.loadTerainContents(this.Content);
 
             // TODO: use this.Content to load your game content here
 
@@ -118,7 +121,7 @@ namespace WindowsGame1
            // bee2.LoadContent(this.Content, "BEE");
 
            // bee2.Position = new Vector2(50,50);
-
+            test.LoadContent(this.Content);
 
             mBackgroundOne.LoadContent(this.Content, Back1);
 
@@ -253,11 +256,15 @@ namespace WindowsGame1
         {
             graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
 
-
+           
 
             // TODO: Add your drawing code here
 
             spriteBatch.Begin();
+
+            this.mTerainManager.Draw(this.spriteBatch);
+
+            test.Draw(this.spriteBatch);
 
             mBackgroundOne.Draw(this.spriteBatch);
 

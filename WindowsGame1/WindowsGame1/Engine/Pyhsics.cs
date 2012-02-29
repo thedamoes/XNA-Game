@@ -8,6 +8,7 @@ namespace WindowsGame1.Engine
     public class Pyhsics
     {
         private CollisionDetection m_colDetector;
+        private const float GRAVATY = 1;
 
         public Pyhsics()
         {
