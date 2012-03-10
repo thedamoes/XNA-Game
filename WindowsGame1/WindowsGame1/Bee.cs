@@ -153,7 +153,7 @@ namespace WindowsGame1
 
                 FlightAnimation(aCurrentKeyboardState);
 
-                if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
+                if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true || aCurrentKeyboardState.IsKeyDown(Keys.A) == true)
                 {
 
                     mSpeed.X = BEE_SPEED;
@@ -162,7 +162,7 @@ namespace WindowsGame1
 
                 }
 
-                else if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true)
+                else if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true || aCurrentKeyboardState.IsKeyDown(Keys.D) == true)
                 {
 
                     mSpeed.X = BEE_SPEED;
@@ -173,7 +173,7 @@ namespace WindowsGame1
 
 
 
-                 if (aCurrentKeyboardState.IsKeyDown(Keys.Up) == true)
+                if (aCurrentKeyboardState.IsKeyDown(Keys.Up) == true || aCurrentKeyboardState.IsKeyDown(Keys.W) == true)
                  {
 
                      mSpeed.Y = BEE_SPEED;
@@ -182,7 +182,7 @@ namespace WindowsGame1
 
                  }
 
-                 else if (aCurrentKeyboardState.IsKeyDown(Keys.Down) == true)
+                else if (aCurrentKeyboardState.IsKeyDown(Keys.Down) == true || aCurrentKeyboardState.IsKeyDown(Keys.S) == true)
                  {
 
                      mSpeed.Y = BEE_SPEED;
@@ -239,11 +239,11 @@ namespace WindowsGame1
             {
                 if (gifpos <= 1)
                 {
-                    if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true)
+                    if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true || aCurrentKeyboardState.IsKeyDown(Keys.D) == true)
                     {
                         Source = new Rectangle(0, 600, 200, 200);
                     }
-                    else if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
+                    else if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true || aCurrentKeyboardState.IsKeyDown(Keys.A) == true)
                     { 
                         Source = new Rectangle(0, 400, 200, 200);
                     }
@@ -273,11 +273,11 @@ namespace WindowsGame1
                 }
                 if (gifpos <= 2 && gifpos >= 2)
                 {
-                    if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true)
+                    if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true || aCurrentKeyboardState.IsKeyDown(Keys.D) == true)
                     {
                         Source = new Rectangle(200, 600, 200, 200);
                     }
-                    else if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
+                    else if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true || aCurrentKeyboardState.IsKeyDown(Keys.A) == true)
                     {
                         Source = new Rectangle(200, 400, 200, 200);
                     }
@@ -296,11 +296,11 @@ namespace WindowsGame1
                 }
                 if (gifpos <= 3 && gifpos >= 3)
                 {
-                    if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true)
+                    if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true || aCurrentKeyboardState.IsKeyDown(Keys.D) == true)
                     {
                         Source = new Rectangle(400, 600, 200, 200);
                     }
-                    else if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
+                    else if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true || aCurrentKeyboardState.IsKeyDown(Keys.A) == true)
                     {
                         Source = new Rectangle(400, 400, 200, 200);
                     }
@@ -413,7 +413,7 @@ namespace WindowsGame1
         private void UpdateOhgodwhy(KeyboardState aCurrentKeyboardState)
         {
 
-            if (aCurrentKeyboardState.IsKeyDown(Keys.RightShift) == true)
+            if (aCurrentKeyboardState.IsKeyDown(Keys.RightShift) == true || aCurrentKeyboardState.IsKeyDown(Keys.LeftShift) == true)
             {
 
                 Ohgodwhy();
@@ -478,7 +478,7 @@ namespace WindowsGame1
 
 
 
-                if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
+                if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true || aCurrentKeyboardState.IsKeyDown(Keys.A) == true)
                 {
 
                     mSpeed.X = BEE_SPEED;
@@ -487,7 +487,7 @@ namespace WindowsGame1
 
                 }
 
-                else if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true)
+                else if (aCurrentKeyboardState.IsKeyDown(Keys.Right) == true || aCurrentKeyboardState.IsKeyDown(Keys.D) == true)
                 {
 
                     mSpeed.X = BEE_SPEED;
